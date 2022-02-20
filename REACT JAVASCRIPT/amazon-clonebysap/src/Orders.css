@@ -1,0 +1,39 @@
+.Orders {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Orders__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.Orders__container > h1 {
+    font-size: 300px;
+    font-weight: 900;
+    text-align: center;
+    color: greenyellow; 
+}
+
+.Orders__banner > h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.Orders__banner > button {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+}
