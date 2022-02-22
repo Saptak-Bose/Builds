@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import SongRow from "./SongRow";
 import "./Body.css";
 import { useDataLayerValue } from "./DataLayer";
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
@@ -27,11 +28,14 @@ function Body({ spotify }) {
 
       <div className="body__songs">
         <div className="body__icons">
-          <PlayCircleFilledIcon />
-          <FavoriteIcon />
+          <PlayCircleFilledIcon className="body__shuffle" />
+          <FavoriteIcon fontSize="large" />
           <MoreHorizIcon />
         </div>
-        {/* List of Songs */}
+
+        {youtube_english?.tracks.items.map(item =>(
+          <SongRow track={item.track} />
+        ))}
       </div>
     </div>
   );
