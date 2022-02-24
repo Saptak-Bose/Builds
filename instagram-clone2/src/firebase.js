@@ -9,7 +9,7 @@ const firebaseApp = firebase.initializeApp({
   projectId: "instagram-clone2-b8b7b",
   storageBucket: "instagram-clone2-b8b7b.appspot.com",
   messagingSenderId: "126998361609",
-  appId: "1:126998361609:web:8780bc8a829bdb944fead8",
+  appId: "1:126998361609:web:8780bc8a829bdb944fead8", 
   measurementId: "G-YG969C760D"
 });
 
