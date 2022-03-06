@@ -12,7 +12,8 @@
 
 .post__body > img {
   border-radius: 20px;
-  width: 100%;
+  max-width: 350px;
+  max-height: 300px;
 }
 
 .post__footer {
@@ -24,6 +25,10 @@
 .post__headerDescription {
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+.post__headerDescription > p {
+  max-width: 300px;
 }
 
 .post__headerText > h3 {

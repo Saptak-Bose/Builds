@@ -3,6 +3,15 @@ body {
   --twitter-background: #e6ecf0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .app {
   display: flex;
   height: 100vh;
