@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@binaryluke/better-react-spinkit": "^2.0.5",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.5.1",
     "@mui/material": "^5.5.1",
+    "email-validator": "^2.0.4",
+    "firebase": "^9.6.8",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-firebase-hooks": "^5.0.3",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
