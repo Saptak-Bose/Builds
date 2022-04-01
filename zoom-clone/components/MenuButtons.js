@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-
 const items = [
   {
     id: 1,
@@ -26,12 +25,17 @@ const items = [
   },
 ];
 
-const MenuButtons = () => {
+const MenuButtons = ({ navigation }) => {
+  const OpenMeeting = () => {
+    navigation.navigate("Room")
+  }
+
   return (
     <View style={styles.container}>
       {items.map((item, index) => (
         <View style={styles.buttonContainer} key={index}>
           <TouchableOpacity
+            onPress={() => OpenMeeting()}
             style={[
               styles.button,
               {
