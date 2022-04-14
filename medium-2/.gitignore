@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+sanityme/config
+
 # testing
 /coverage
 
