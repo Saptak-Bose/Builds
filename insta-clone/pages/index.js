@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Feed from "../components/Feed";
 import Header from "../components/Header";
+import Modal from "../components/Modal";
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       </Head>
       <Header />
       <Feed />
-      {/* Modal */}
+      <Modal />
     </div>
   );
 };
