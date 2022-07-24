@@ -21,10 +21,6 @@
   padding: 6px;
 }
 
-.header_logo:hover {
-  border-color: white;
-}
-
 .header_search {
   display: flex;
   flex: 1;
@@ -67,6 +63,7 @@
   border-width: 1px;
   border-radius: 3px;
   padding: 6px;
+  text-decoration: none;
 }
 
 .header_option:hover {
@@ -74,7 +71,6 @@
   border-width: 1px;
   border-radius: 3px;
   padding: 6px;
-  border-color: white;
 }
 
 .header_optionLineOne {
@@ -86,7 +82,7 @@
   font-weight: 800;
 }
 
-.header_optionBasket {
+.header_optionCart {
   display: flex;
   align-items: center;
   color: white;
@@ -97,11 +93,7 @@
   padding: 9px 5px;
 }
 
-.header_optionBasket:hover {
-  border-color: white;
-}
-
-.header_basketCount {
+.header_cartCount {
   margin-left: 10px;
   margin-right: 10px;
 }
