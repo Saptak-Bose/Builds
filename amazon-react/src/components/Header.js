@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./styles/Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { NavLink } from "react-router-dom";
@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div className="header">
-      <NavLink to="/">
+      <NavLink className="link" to="/">
         <img
           className="header_logo"
           src="https://pngimg.com/uploads/amazon/amazon_PNG25.png"
@@ -24,10 +24,12 @@ function Header() {
       </div>
 
       <div className="header_nav">
-        <div className="header_option">
-          <span className="header_optionLineOne">Hello Guest</span>
-          <span className="header_optionLineTwo">Sign in</span>
-        </div>
+        <NavLink className="link" to="/login">
+          <div className="header_option">
+            <span className="header_optionLineOne">Hello Guest</span>
+            <span className="header_optionLineTwo">Sign in</span>
+          </div>
+        </NavLink>
         <div className="header_option">
           <span className="header_optionLineOne">Returns</span>
           <span className="header_optionLineTwo">& Orders</span>
@@ -38,7 +40,7 @@ function Header() {
         </div>
       </div>
 
-      <NavLink to="/checkout">
+      <NavLink className="link" to="/checkout">
         <div className="header_optionCart">
           <ShoppingCartOutlinedIcon sx={{ fontSize: "30px" }} />
           <span className="header_optionLineTwo header_cartCount">

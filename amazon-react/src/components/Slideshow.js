@@ -1,7 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import "./Slideshow.css";
+import "./styles/Slideshow.css";
 
 const slideImages = [
   "https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg",
@@ -12,9 +12,9 @@ const slideImages = [
 function Slideshow() {
   return (
     <div>
-      <Slide easing="ease">
+      <Slide easing="ease" arrows>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
+          <div style={{ backgroundImage: `url(${slideImages[0]})` }} className="slides"></div>
         </div>
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
