@@ -35,6 +35,15 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route
+            path="/payment"
+            element={
+              <>
+                <Header />
+                <h1>I am the payment page</h1>
+              </>
+            }
+          />
           <Route path="/login" element={<Login />} />
           <Route
             path="/checkout"

@@ -14,6 +14,8 @@ function Header() {
     }
   };
 
+  const username = user?.email.split("@")[0];
+
   return (
     <div className="header">
       <NavLink className="link" to="/">
@@ -33,7 +35,7 @@ function Header() {
         <NavLink className="link" to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header_option">
             <span className="header_optionLineOne">
-              Hello {user ? user?.email : "Guest"}
+              Hello {user ? username : "Guest"}
             </span>
             <span className="header_optionLineTwo">
               {user ? "Sign out" : "Sign in"}

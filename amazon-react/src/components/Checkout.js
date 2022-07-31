@@ -6,6 +6,7 @@ import Subtotal from "./Subtotal";
 
 function Checkout() {
   const [{ cart, user }, dispatch] = useStateValue();
+  const username = user?.email.split("@")[0];
 
   return (
     <div className="checkout">
@@ -17,9 +18,8 @@ function Checkout() {
         />
 
         <div>
-          <h3>Hey, {user?.email}</h3>
+          <h3>Hello {username}, What's up?</h3>
           <h2 className="checkout_title">Your shopping Cart</h2>
-
           {cart?.map((item) => (
             <CheckoutProduct
               id={item.id}
