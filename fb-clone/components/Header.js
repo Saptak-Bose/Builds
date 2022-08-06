@@ -44,7 +44,7 @@ export default function Header() {
       {/* Center */}
       <div className="flex justify-center flex-grow">
         <div className="flex space-x-6 md:space-x-2">
-          <HeaderIcon active Icon={HomeIcon} />
+          <HeaderIcon Icon={HomeIcon} active={true} />
           <HeaderIcon Icon={FlagIcon} />
           <HeaderIcon Icon={PlayIcon} />
           <HeaderIcon Icon={ShoppingCartIcon} />
@@ -62,7 +62,9 @@ export default function Header() {
           height={40}
           layout="fixed"
         />
-        <p className="font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
+        <p className="font-semibold pr-3 whitespace-nowrap">
+          {session.user.name}
+        </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
         <BellIcon className="icon" />
