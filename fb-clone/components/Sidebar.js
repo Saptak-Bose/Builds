@@ -1,6 +1,7 @@
 import { useSession } from "next-auth/client";
 import React from "react";
 import SidebarRow from "./SidebarRow";
+import { useRouter } from "next/router";
 import {
   ChevronDownIcon,
   ShoppingBagIcon,
@@ -15,6 +16,7 @@ import {
 
 export default function Sidebar() {
   const [session] = useSession();
+  const router = useRouter();
 
   return (
     <div className="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">

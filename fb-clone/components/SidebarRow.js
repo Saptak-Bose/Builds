@@ -17,7 +17,7 @@ export default function SidebarRow({ src, title, Icon }) {
         />
       )}
       {Icon && <Icon className="h-8 w-8 text-blue-500" />}
-      <p className="hidden sm:inline-flex font-bold">{title}</p>
+      <p className="hidden sm:inline-flex font-semibold">{title}</p>
     </div>
   );
 }
