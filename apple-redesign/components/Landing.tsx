@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 const Landing = () => {
   return (
@@ -14,7 +15,7 @@ const Landing = () => {
         </h1>
 
         <div className="space-x-8">
-          {/* <Button title="Buy Now"/> */}
+          <Button title="Buy Now" />
           <a className="link">Learn More</a>
         </div>
       </div>
