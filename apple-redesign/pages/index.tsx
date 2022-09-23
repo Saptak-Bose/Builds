@@ -6,6 +6,7 @@ import Product from "../components/Product";
 import Head from "next/head";
 import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
+import Basket from "../components/Basket";
 
 interface Props {
   categories: Category[];
@@ -48,6 +49,7 @@ const Home = ({ categories, products }: Props) => {
       </Head>
 
       <Header />
+      <Basket />
       <main className="relative h-[200vh] bg-[#e7ecee]">
         <Landing />
       </main>
@@ -80,6 +82,7 @@ const Home = ({ categories, products }: Props) => {
               <Tab.Panel className="tabPanel">{showProducts(1)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(2)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(3)}</Tab.Panel>
+              <Tab.Panel className="tabPanel">{showProducts(4)}</Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
         </div>
