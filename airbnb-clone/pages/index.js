@@ -8,7 +8,7 @@ import SmallCard from "../components/SmallCard";
 
 export default function Home({ exploreData, cardsData }) {
   return (
-    <div>
+    <div className="bg-gray-50">
       <Head>
         <title>Holiday Homes & Apartment Rentals - Airbnb</title>
         <link
@@ -37,7 +37,7 @@ export default function Home({ exploreData, cardsData }) {
       <Header />
       <Banner />
 
-      <main className="mx-auto max-w-7xl px-8 sm:px-16">
+      <main className="m-10 mx-auto max-w-7xl rounded-xl bg-white px-8 shadow-md sm:px-16">
         <section className="pt-6">
           <h2 className="pb-5 text-4xl font-semibold">Explore Nearby</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
